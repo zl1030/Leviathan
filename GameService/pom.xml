@@ -25,4 +25,69 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <executions>
+                    <execution>
+                        <id>build-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!--Maven目录settings.xml里servers里追加下面注释段，添加远程Docker私有库-->
+                    <![CDATA[
+                    <server>
+                        <!--maven的pom中可以根据这个id找到这个server节点的配置-->
+                        <id>docker-aliyun</id>
+                        <!--这里是在阿里云注册的账号-->
+                        <username>ap6653f1m@aliyun.com</username>
+                        <!--这里是在阿里云注册的密码-->
+                        <password>123456</password>
+                        <configuration>
+                            <!--这是在阿里云注册时填写的邮箱-->
+                            <email>zl1030@163.com</email>
+                        </configuration>
+                    </server>
+                    ]]>
+
+                    <!--要上传到的Docker远程私有库ID-->
+                    <serverId>docker-aliyun</serverId>
+                    <registryUrl>${docker.repostory}</registryUrl>
+
+                    <!--镜像名称-->
+                    <imageName>${docker.repostory}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>
+
+                    <!--镜像版本号-->
+                    <imageTags>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
+
+                    <!--1. 使用Dockerfile方式-->
+                    <!--<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>-->
+
+                    <!--2. 使用POM方式-->
+                    <baseImage>java:8</baseImage>
+                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+
+                    <pushImage>true</pushImage>
+
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
