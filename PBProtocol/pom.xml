@@ -72,7 +72,13 @@
                     <pluginId>grpc-java</pluginId>
                     <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}
                     </pluginArtifact>
+                    <!--.proto所在路径-->
                     <protoSourceRoot>src/proto</protoSourceRoot>
+                    <!--生成的Java源码位置，/src/main/java/ -->
+                    <!--<outputDirectory>${project.build.sourceDirectory}</outputDirectory>-->
+                    <!--设置是否在生成java文件之前清空outputDirectory的文件-->
+                    <!--<clearOutputDirectory>true</clearOutputDirectory>-->
+                    <!--<temporaryProtoFileDirectory>${project.build.directory}/protoc-dependencies</temporaryProtoFileDirectory>-->
                 </configuration>
                 <executions>
                     <execution>

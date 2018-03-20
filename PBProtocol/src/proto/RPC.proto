@@ -1,0 +1,22 @@
+syntax = "proto3";
+option java_package = "com.zl1030.leviathan.pb";
+//option java_outer_classname = "RPC";
+option java_multiple_files = false;
+
+import "Model.proto";
+
+message FooRequest {
+    string text = 1;
+    int32 times = 2;
+    Person person = 3;
+}
+
+message FooResponse {
+    string text = 1;
+    bool result = 2;
+}
+
+service EchoService {
+    rpc Foo (FooRequest) returns (FooResponse);
+    rpc Foo2 (Person) returns (Person);
+}
