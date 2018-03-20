@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: zl1030
@@ -20,6 +21,10 @@ public class GameServiceController {
 
     @GetMapping("/games")
     public List<ServiceInstance> showInfo() {
-        return this.discoveryClient.getInstances("game-service");
+        List<ServiceInstance> list = this.discoveryClient.getInstances("game-service");
+        for (Map.Entry<String, String> entry : list.get(0).getMetadata().entrySet()) {
+            System.out.println(entry.getKey() + "->" + entry.getValue());
+        }
+        return list;
     }
 }
