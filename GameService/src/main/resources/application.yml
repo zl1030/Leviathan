@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+management:
+  security:
+    # 关闭actuator鉴权，这样可以不验证调用/refresh刷新配置
+    enabled: false
+
+

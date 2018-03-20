@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: service-discovery
+server:
+  # Web后台页面端口
+  port: 8761
+
+#
+eureka:
+  client:
+    # 是否把自己注册到Eureka Server
+    register-with-eureka: false
+    # 是否从Eureka Server获取注册信息，默认是，单例情况下否
+    fetch-registry: false
+
+#
+logging:
+  level:
+  com.netflix.eureka: OFF
+  com.netflix.discovery: OFF
+
+#
+security:
+  basic:
+    enabled: true
+  user:
+    name: zl1030
+    password: 123456

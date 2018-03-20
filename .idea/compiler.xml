@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="battle-service" />
+        <module name="chat-service" />
+        <module name="config-center" />
+        <module name="data-center" />
+        <module name="game-common" />
+        <module name="game-service" />
+        <module name="gm-service" />
+        <module name="lobby-service" />
+        <module name="service-discovery" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="battle-service" target="1.8" />
+      <module name="chat-service" target="1.8" />
+      <module name="config-center" target="1.8" />
+      <module name="data-center" target="1.8" />
+      <module name="game-common" target="1.8" />
+      <module name="game-service" target="1.8" />
+      <module name="gm-service" target="1.8" />
+      <module name="Leviathan" target="1.8" />
+      <module name="lobby-service" target="1.8" />
+      <module name="service-discovery" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

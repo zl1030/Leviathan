@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BattleService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConfigCenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DataCenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GMService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GameCommon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GameService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LobbyService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServiceDiscovery" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Leviathan.iml" filepath="$PROJECT_DIR$/Leviathan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BattleService/battle-service.iml" filepath="$PROJECT_DIR$/BattleService/battle-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatService/chat-service.iml" filepath="$PROJECT_DIR$/ChatService/chat-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigCenter/config-center.iml" filepath="$PROJECT_DIR$/ConfigCenter/config-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataCenter/data-center.iml" filepath="$PROJECT_DIR$/DataCenter/data-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GameCommon/game-common.iml" filepath="$PROJECT_DIR$/GameCommon/game-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GameService/game-service.iml" filepath="$PROJECT_DIR$/GameService/game-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GMService/gm-service.iml" filepath="$PROJECT_DIR$/GMService/gm-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LobbyService/lobby-service.iml" filepath="$PROJECT_DIR$/LobbyService/lobby-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceDiscovery/service-discovery.iml" filepath="$PROJECT_DIR$/ServiceDiscovery/service-discovery.iml" />
+    </modules>
+  </component>
+</project>

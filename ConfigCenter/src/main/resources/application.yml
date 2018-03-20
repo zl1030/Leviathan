@@ -1,0 +1,32 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zl1030/SpringCloudConfigRepo.git
+          # 启动时clone到本地
+          clone-on-start: true
+#          username:
+#          password:
+
+#
+eureka:
+  client:
+    service-url:
+      defaultZone : http://zl1030:123456@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      zlparam1: zl11111
+      zlparam2: haha222
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: zl1030
+    password: 123456
