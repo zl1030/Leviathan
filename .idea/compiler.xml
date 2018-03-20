@@ -14,6 +14,7 @@
         <module name="game-service" />
         <module name="gm-service" />
         <module name="lobby-service" />
+        <module name="PBProtocol" />
         <module name="service-discovery" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="gm-service" target="1.8" />
       <module name="Leviathan" target="1.8" />
       <module name="lobby-service" target="1.8" />
+      <module name="PBProtocol" target="1.8" />
       <module name="service-discovery" target="1.8" />
     </bytecodeTargetLevel>
   </component>

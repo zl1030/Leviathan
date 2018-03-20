@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Leviathan.iml" filepath="$PROJECT_DIR$/Leviathan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PBProtocol/PBProtocol.iml" filepath="$PROJECT_DIR$/PBProtocol/PBProtocol.iml" />
       <module fileurl="file://$PROJECT_DIR$/BattleService/battle-service.iml" filepath="$PROJECT_DIR$/BattleService/battle-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChatService/chat-service.iml" filepath="$PROJECT_DIR$/ChatService/chat-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ConfigCenter/config-center.iml" filepath="$PROJECT_DIR$/ConfigCenter/config-center.iml" />

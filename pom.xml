@@ -29,6 +29,7 @@
         <module>LobbyService</module>
         <module>ChatService</module>
         <module>GMService</module>
+        <module>PBProtocol</module>
     </modules>
 
     <parent>
