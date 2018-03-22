@@ -23,6 +23,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Value("${spring.cloud.config.profile}")
+    private String profileActive;
+
+//    @Value("${myname}")
+//    private String myName;
+
+    @GetMapping("/p")
+    public String getProfileActive() {
+        return " " + profileActive;
+    }
+
     @RequestMapping("/getuser")
     public User getuser(@RequestParam(value = "name", defaultValue = "World") String name) {
         return userService.findByName(name);

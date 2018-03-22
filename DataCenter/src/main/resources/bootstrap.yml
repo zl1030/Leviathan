@@ -1,8 +1,12 @@
+
+
 spring:
   application:
     name: data-center
   cloud:
     config:
+      # 打成jar包后，可以通过传入参数--spring.cloud.config.profile=dev修改
+      # 如果需要传入多个参数，需要每个参数单独写，格式： --参数=值
       profile: dev
       discovery:
         # 开启从注册服务中自动发现配置中心服务
