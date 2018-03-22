@@ -6,6 +6,7 @@ spring:
   cloud:
     config:
       server:
+        # 配置文件所在VCS
         git:
           uri: https://github.com/zl1030/SpringCloudConfigRepo.git
           # 启动时clone到本地
@@ -24,6 +25,7 @@ eureka:
       zlparam1: zl11111
       zlparam2: haha222
 
+# 需要获取配置的客户端鉴权信息
 security:
   basic:
     enabled: true
